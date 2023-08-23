@@ -1,10 +1,20 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+interface PillSectionProps {
+  textColor: string
+}
+
+interface ContainerProps {
+  iconColor: string
+}
+
+export const Container = styled.div<ContainerProps>`
   margin: 0 auto;
   margin-bottom: 6.75rem;
   max-width: 1340px;
-  padding: 1.75rem 5rem;
+  height: 400px;
+
+  padding: 30px 80px 20px 80px;
   border-radius: 1.25rem;
   color: ${(props) => props.theme.colors.white};
   position: relative;
@@ -18,17 +28,21 @@ export const Container = styled.div`
     display: flex;
 
     section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
       h1 {
         font-size: 2.375rem;
         font-weight: 700;
         margin-bottom: 1.25rem;
-        margin-top: 1.875rem;
       }
 
       p {
         font-size: 1.125rem;
         font-weight: 500;
-        margin-bottom: 2.75rem;
+        flex: 1;
       }
 
       button {
@@ -57,7 +71,7 @@ export const Container = styled.div`
           width: 2.25rem;
           height: 2.25rem;
           border-radius: 50%;
-          background: ${(props) => props.theme.colors['indigo-500']};
+          background: ${(props) => props.iconColor};
         }
       }
     }
@@ -80,11 +94,12 @@ export const SideControl = styled.button`
   background: ${(props) => props.theme.colors.white};
 `
 
-export const PillSection = styled.div`
+export const PillSection = styled.div<PillSectionProps>`
   display: flex;
   margin-left: 5rem;
   gap: 2rem;
   position: relative;
+  height: 350px;
 
   img {
     position: absolute;
@@ -95,7 +110,7 @@ export const PillSection = styled.div`
   div {
     border-radius: 0.625rem;
     background: ${(props) => props.theme.colors.white};
-    color: ${(props) => props.theme.colors['indigo-500']};
+    color: ${(props) => props.textColor};
     padding: 1.25rem;
 
     h1 {

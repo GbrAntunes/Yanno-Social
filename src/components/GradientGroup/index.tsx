@@ -4,12 +4,16 @@ import {
   ThirdGradientCircle,
 } from './styles'
 
-export function GradientGroup() {
+interface GradientGroupProps {
+  colors: string[]
+}
+
+export function GradientGroup({ colors }: GradientGroupProps) {
   return (
     <>
-      <FirstGradientCircle />
-      <SecondGradientCircle />
-      <ThirdGradientCircle />
+      <FirstGradientCircle color={colors[0]} />
+      <SecondGradientCircle color={colors[1]} />
+      <ThirdGradientCircle color={colors[2]} />
     </>
   )
 }
