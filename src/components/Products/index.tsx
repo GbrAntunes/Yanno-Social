@@ -14,7 +14,7 @@ export function Products() {
   const carouselBullets = useRef<HTMLElement>(null)
 
   function handleLeftScroll() {
-    if (currentCarouselPage >= 0) {
+    if (currentCarouselPage > 0) {
       setCurrentCarouselPage((prevState) => prevState - 1)
 
       if (carousel.current) {
@@ -40,7 +40,10 @@ export function Products() {
       <h1>Cuide bem do seu pet com Yanno</h1>
 
       <ProductCarousel>
-        <SideControl onClick={handleLeftScroll}>
+        <SideControl
+          disabled={currentCarouselPage === 0}
+          onClick={handleLeftScroll}
+        >
           <ArrowLeft
             size={24}
             weight="bold"
@@ -61,7 +64,10 @@ export function Products() {
           <ProductBox productImage={orangeProduct} />
           <ProductBox productImage={purpleProduct} />
         </div>
-        <SideControl onClick={handleRightScroll}>
+        <SideControl
+          disabled={currentCarouselPage === 4}
+          onClick={handleRightScroll}
+        >
           <ArrowRight
             size={24}
             weight="bold"

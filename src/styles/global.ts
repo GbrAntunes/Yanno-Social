@@ -16,8 +16,13 @@ export const GlobalStyle = createGlobalStyle`
     background: white;
     transition: 0.2s background;
 
-    &:hover {
+    &:hover:enabled {
       background: ${(props) => props.theme.colors['gray-500']};
+    }
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.7;
     }
   }
 `
