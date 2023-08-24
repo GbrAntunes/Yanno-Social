@@ -19,11 +19,10 @@
       </ul>
     </li>
     <li>
-      <a href="#installation">Installation</a>
+      <a href="#instalação">Instalação</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contact">Contato</a></li>
-    <li><a href="#acknowledgments">Considerações</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#consideracoes">Considerações</a></li>
   </ol>
 </details>
 
@@ -42,7 +41,7 @@ Ferramentas utilizadas
 
 * [![React][React.js]][React-url]
 * [![Typescript][Typescript.ts]][Typescript-url]
-* [![StyledComponents][StyledComponents.js]][StyledComponents-url]
+* [![StyledComponents][StyledComponents.sc]][StyledComponents-url]
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
@@ -87,9 +86,9 @@ LinkedIn: [https://www.linkedin.com/in/gabriel-antunes-tenorio/](https://www.lin
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[React.js]: https://img.shields.io/badge/React-18.2.0-CornflowerBlue
+[React.js]: https://img.shields.io/badge/React-18.2.0-61DBFB
 [React-url]: https://reactjs.org/
 [Typescript.ts]: https://img.shields.io/badge/Typescript-5.0.2-blue
 [Typescript-url]: https://www.typescriptlang.org/
-[StyledComponents]: https://img.shields.io/badge/Styled%20Components-6.0.7-LightCoral
+[StyledComponents.sc]: https://img.shields.io/badge/Styled%20Components-6.0.7-lightcoral
 [StyledComponents-url]: https://styled-components.com/
