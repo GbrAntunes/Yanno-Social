@@ -37,7 +37,7 @@ Algumas considerações sobre as escolhas feitas no projeto e os desafios que ti
 Ferramentas utilizadas
 
 * [![Node][Node.nd]][Node-url]
-* [![Npm][Npm.np]][Npm-url]
+* [![Yarn][Yarn.np]][Yarn-url]
 * [![React][React.js]][React-url]
 * [![Typescript][Typescript.ts]][Typescript-url]
 * [![StyledComponents][StyledComponents.sc]][StyledComponents-url]
@@ -111,5 +111,5 @@ LinkedIn: [https://www.linkedin.com/in/gabriel-antunes-tenorio/](https://www.lin
 [Phosphoricons-url]: https://phosphoricons.com/
 [Node.nd]: https://img.shields.io/badge/Node-18.16.0-339933?logo=nodedotjs
 [Node-url]: https://nodejs.org/
-[Npm.np]: https://img.shields.io/badge/Npm-9.5.1-CB3837?logo=npm
-[Npm-url]: https://www.npmjs.com/
+[Yarn.yr]: https://img.shields.io/badge/Yarn-1.22.19-2C8EBB?logo=yarn
+[Yarn-url]: https://yarnpkg.com/
