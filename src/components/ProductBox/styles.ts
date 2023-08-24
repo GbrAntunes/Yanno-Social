@@ -7,7 +7,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  overflow: hidden;
   border-radius: 0.375rem;
   border: 1px solid ${(props) => props.theme.colors['gray-500']};
 

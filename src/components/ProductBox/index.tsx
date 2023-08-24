@@ -4,24 +4,10 @@ import { Basket, Heart, Minus, Plus } from '@phosphor-icons/react'
 import { Container } from './styles'
 
 interface ProductBoxProps {
-  flavor: string
-  capsQuantity: number
-  favorited: boolean
-  description: string
-  fullPrice: number
-  discount: number
   productImage: string
 }
 
-export function ProductBox({
-  flavor,
-  capsQuantity,
-  favorited,
-  description,
-  fullPrice,
-  discount,
-  productImage,
-}: ProductBoxProps) {
+export function ProductBox({ productImage }: ProductBoxProps) {
   const theme = useContext(ThemeContext)
   const [itemQuantity, setItemQuantity] = useState(1)
 

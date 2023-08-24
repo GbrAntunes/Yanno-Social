@@ -50,14 +50,25 @@ export const SideControl = styled.button`
   background: ${(props) => props.theme.colors['violet-50']};
 `
 
-export const ProductCarrousel = styled.div`
+export const ProductCarousel = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
+
   margin-bottom: 0.75rem;
 
   & > div {
     display: flex;
     gap: 1.25rem;
+    max-width: 1217px;
+
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `
