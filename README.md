@@ -39,6 +39,7 @@ Ferramentas utilizadas
 * [![React][React.js]][React-url]
 * [![Typescript][Typescript.ts]][Typescript-url]
 * [![StyledComponents][StyledComponents.sc]][StyledComponents-url]
+* [![Phosphoricons][Phosphoricons.pi]][Phosphoricons-url]
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
@@ -64,7 +65,16 @@ Siga o passo a passo abaixo para inicializar o projeto. Ao executar o git clone,
    ```sh
    yarn install
    ```
+4. Execute o projeto
+   npm
+   ```sh
+   npm run dev
+   ```
 
+   yarn
+   ```sh
+   yarn dev
+   ```
 ## Considerações
 
 ### Sobre o arquivo Figma
