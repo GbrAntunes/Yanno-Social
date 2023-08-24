@@ -36,6 +36,8 @@ Algumas considerações sobre as escolhas feitas no projeto e os desafios que ti
 
 Ferramentas utilizadas
 
+* [![Node][Node.nd]][Node-url]
+* [![Npm][Npm.np]][Npm-url]
 * [![React][React.js]][React-url]
 * [![Typescript][Typescript.ts]][Typescript-url]
 * [![StyledComponents][StyledComponents.sc]][StyledComponents-url]
@@ -66,6 +68,7 @@ Siga o passo a passo abaixo para inicializar o projeto. Ao executar o git clone,
    yarn install
    ```
 4. Execute o projeto
+
    npm
    ```sh
    npm run dev
@@ -102,7 +105,11 @@ LinkedIn: [https://www.linkedin.com/in/gabriel-antunes-tenorio/](https://www.lin
 [React-url]: https://reactjs.org/
 [Typescript.ts]: https://img.shields.io/badge/Typescript-5.0.2-blue?logo=typescript
 [Typescript-url]: https://www.typescriptlang.org/
-[StyledComponents.sc]: https://img.shields.io/badge/Styled%20Components-6.0.7-lightcoral?logo=styled-components
+[StyledComponents.sc]: https://img.shields.io/badge/Styled%20Components-6.0.7-DB7093?logo=styled-components
 [StyledComponents-url]: https://styled-components.com/
 [Phosphoricons.pi]: https://img.shields.io/badge/Phosphor%20Icons-2.0.10-c4e456
 [Phosphoricons-url]: https://phosphoricons.com/
+[Node.nd]: https://img.shields.io/badge/Node-18.16.0-339933?logo=nodedotjs
+[Node-url]: https://nodejs.org/
+[Npm.np]: https://img.shields.io/badge/Npm-9.5.1-CB3837?logo=npm
+[Npm-url]: https://www.npmjs.com/
