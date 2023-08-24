@@ -11,6 +11,16 @@ export function ProductBox({ productImage }: ProductBoxProps) {
   const theme = useContext(ThemeContext)
   const [itemQuantity, setItemQuantity] = useState(1)
 
+  function handleMinusClick() {
+    if (itemQuantity > 1) {
+      setItemQuantity((prevState) => prevState - 1)
+    }
+  }
+
+  function handlePlusClick() {
+    setItemQuantity((prevState) => prevState + 1)
+  }
+
   return (
     <Container>
       <div>
@@ -35,11 +45,11 @@ export function ProductBox({ productImage }: ProductBoxProps) {
           <span>%15</span>
         </div>
         <div className="quantitySelector">
-          <button onClick={() => setItemQuantity(itemQuantity - 1)}>
+          <button onClick={handleMinusClick}>
             <Minus size={20} weight="bold" color={theme?.colors['green-600']} />
           </button>
           <span>{itemQuantity}</span>
-          <button onClick={() => setItemQuantity(itemQuantity + 1)}>
+          <button onClick={handlePlusClick}>
             <Plus size={20} weight="bold" color={theme?.colors['green-600']} />
           </button>
           <button>
