@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     transition: 0.2s background;
 
     &:hover {
-      background: ${(props) => props.theme.colors['gray-700']};
+      background: ${(props) => props.theme.colors['gray-500']};
     }
   }
 `
