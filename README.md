@@ -58,22 +58,22 @@ Siga o passo a passo abaixo para inicializar o projeto. Ao executar o git clone,
    cd yanno-social
    ```
 3. Instale as dependências (escolha npm ou yarn)
-   1. npm
+   - npm
    ```sh
    npm install
    ```
 
-   2. yarn
+   - yarn
    ```sh
    yarn install
    ```
 4. Execute o projeto
-   1. npm
+   - npm
    ```sh
    npm run dev
    ```
 
-   2. yarn
+   - yarn
    ```sh
    yarn dev
    ```
