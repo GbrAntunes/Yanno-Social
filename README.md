@@ -19,7 +19,7 @@
         <li><a href="#instalação">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#consideracoes">Considerações</a></li>
+    <li><a href="#Considerações">Considerações</a></li>
     <li><a href="#contato">Contato</a></li>
   </ol>
 </details>
@@ -37,7 +37,7 @@ Algumas considerações sobre as escolhas feitas no projeto e os desafios que ti
 Ferramentas utilizadas
 
 * [![Node][Node.nd]][Node-url]
-* [![Yarn][Yarn.np]][Yarn-url]
+* [![Yarn][Yarn.yr]][Yarn-url]
 * [![React][React.js]][React-url]
 * [![Typescript][Typescript.ts]][Typescript-url]
 * [![StyledComponents][StyledComponents.sc]][StyledComponents-url]
@@ -85,7 +85,19 @@ Siga o passo a passo abaixo para inicializar o projeto. Ao executar o git clone,
 O arquivo enviado não continha uma sessão que entregasse todas as imagens, logos, fontes utilizadas, tamanhos, componentes, etc. portanto, tomei a liberdade de realizar alguns ajustes e escolher uma biblioteca de ícones padronizados.
 
 Os ajustes que cito foram os seguintes:
-- Espaçamentos padronizados para se adequar a regra dos 8px.
+- Espaçamentos padronizados para se adequar a *regra dos 8px*.
+- Algumas cores eu não utilize por serem extremamente próximas umas as outras, portanto, escolhi uma delas e adicionei ao arquivo de tema da aplicação para manter o padrão.
+- Como as imagens não foram disponibilizadas, ou eu poderia baixá-las diretamente do Figma já editadas ou eu encontraria essas imagens e realizaria as edições manualmente. Para evitar "atalhos" preferi encontrar as imagens originais e editá-las através do CSS ou redimensioná-las para o que eu precisaria.
+- Não consegui identificar qual biblioteca de ícones foi escolhida (percebi alguns do Material e outros do Vue) e também não estavam disponíveis na sessão de assets do projeto do Figma, eu escolhi a biblioteca do *Phosphor*.
+
+
+### Sobre os carrosséis
+
+Dos 3 carrosséis solicitados, comecei pelo mais importante (na minha opinião, o dos produtos) e optei por utilizar duas lógicas diferentes para os carrosséis desenvolvidos:
+1. Utilizar os estados do React para armazenar o conteúdo da página atual do carrossel e utilizar funções para alternar entre as posições de um array.
+2. Renderizar todos os itens do carrossel e apenas realizar um scroll para controlar quais itens serão exibidos na tela.
+
+Acredito que as duas estratégias possuam prós e contras. Utilizei ambas já que o intuito do projeto é mostrar o que sabemos fazer, evidentemente numa situação real ponderaríamos sobre qual estratégia seria mais eficaz para o cenário.
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
