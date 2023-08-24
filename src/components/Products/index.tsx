@@ -33,7 +33,11 @@ export function Products() {
     }
   }
 
-  useEffect(() => {}, [currentCarouselPage])
+  useEffect(() => {
+    if (carousel.current) {
+      carousel.current.scrollLeft = 0
+    }
+  }, [])
 
   return (
     <Container>
