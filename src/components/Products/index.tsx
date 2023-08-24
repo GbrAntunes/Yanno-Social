@@ -24,7 +24,7 @@ export function Products() {
   }
 
   function handleRightScroll() {
-    if (currentCarouselPage <= 3) {
+    if (currentCarouselPage < 3) {
       setCurrentCarouselPage((prevState) => prevState + 1)
     }
 
@@ -65,7 +65,7 @@ export function Products() {
           <ProductBox productImage={purpleProduct} />
         </div>
         <SideControl
-          disabled={currentCarouselPage === 4}
+          disabled={currentCarouselPage === 3}
           onClick={handleRightScroll}
         >
           <ArrowRight
@@ -77,10 +77,10 @@ export function Products() {
       </ProductCarousel>
 
       <footer ref={carouselBullets}>
-        <div className="active" />
-        <div />
-        <div />
-        <div />
+        <div className={currentCarouselPage === 0 ? 'active' : ''} />
+        <div className={currentCarouselPage === 1 ? 'active' : ''} />
+        <div className={currentCarouselPage === 2 ? 'active' : ''} />
+        <div className={currentCarouselPage === 3 ? 'active' : ''} />
       </footer>
     </Container>
   )
